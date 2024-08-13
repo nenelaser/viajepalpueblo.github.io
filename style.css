@@ -823,6 +823,10 @@ textarea {
   padding-top: 15px;
 }
 
+.formulario  #d6{ 
+  text-align: center;
+}
+
 
 #enviar {
   width: 150px;
