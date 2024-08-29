@@ -478,14 +478,14 @@ melcocho
 }
 
 span  a  i {
- color: #0a0a0a;
+  color: #0a0a0a;
  
 }
 
 .redes .instagram:hover,
 .redes .instagram:hover .tooltip,
 .redes .instagram:hover .tooltip::before {
- background-color: rgb(175, 173, 173);
+  background-color: rgb(175, 173, 173);
 }
 
 .redes .youtube:hover,
@@ -497,7 +497,7 @@ span  a  i {
 .redes .twitter:hover,
 .redes .twitter:hover .tooltip,
 .redes .twitter:hover .tooltip::before {
- background-color: rgb(175, 173, 173);
+  background-color: rgb(175, 173, 173);
 
 }
 
@@ -505,9 +505,9 @@ span  a  i {
 .redes .google:hover,
 .redes .google:hover .tooltip,
 .redes .google:hover .tooltip::before {
- background-color: rgb(175, 173, 173);
-}
+  background-color: rgb(175, 173, 173);
 
+}
 
 
 
@@ -521,13 +521,10 @@ span  a  i {
 }
 
 
-.container-estandar {
-  /* display: grid;
-  grid-template-columns: 60% 30%;*/
+.container-estandar { 
   display: flex;
   width: 100%;
-  height: auto;
-  padding-top: 60px;
+  padding: 60px 100px 0px;
 }
 
 
@@ -557,12 +554,9 @@ span  a  i {
   font-family: Droid Serif, Georgia, serif;
   font-weight: 400;
   font-size: 3.8rem;
-
-
-
-
-
 }
+
+
 
 #p1 {
   text-align: justify;
@@ -793,9 +787,7 @@ li {
   margin-left: 10px;
 }
 
-#asunto {
-  margin-left: 10px;
-}
+
 
 #d7 {
   text-align: center;
@@ -820,7 +812,6 @@ textarea {
   text-align: center;
 }
 
-
 #enviar {
   width: 150px;
   height: 40px;
@@ -834,6 +825,8 @@ textarea {
 
 
 }
+
+
 
 #enviar:hover {
   color: aqua;
@@ -850,7 +843,16 @@ textarea {
 
 /* MEDIA QUERIES */
 
+
+
+
+
 @media screen and (max-width: 912px) {
+
+
+  .container-estandar {    
+    padding: 60px 40px 0px;
+  }
 
 
 
@@ -917,17 +919,25 @@ textarea {
 
 @media screen and (max-width: 600px) {
 
-
+ 
 
 
   .container-estandar {
-    display: block;
+    display: block; 
+    padding: 30px 10px 0px;
+    }
+  
   }
 
   .cronica {
-    margin: 0 50px;
+    margin: 0 40px;
     padding: 10px 5px;
   }
+
+  
+#titulocronica {
+  font-size: 3.0rem;
+}
 
 
 
@@ -972,7 +982,7 @@ textarea {
 
 
 
-}
+
 
 
 
@@ -981,8 +991,13 @@ textarea {
 
 
 
+  .container-estandar {    
+    padding: 20px 10px 0px;
+  }
+
+
   .cronica {
-    margin: 0 15px;
+    margin: 0 10px;
   }
 
 
