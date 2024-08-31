@@ -259,23 +259,20 @@ small {
 
 .photos {
   width: 100%;
-  /*ancho*/
-  height: auto;
-  /*largo*/
+  height: auto; 
   background: white;
-  /*color*/
-
-
-
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 250px);
+
+
+.grid-container { 
+  display: grid;  
+  grid-template-columns: repeat(auto-fill, 250px); 
   gap: 10px;
   justify-content: center;
   margin: 15px;
 }
+
 
 
 .grid-item {
@@ -506,9 +503,6 @@ span  a  i {
 
 
 
-
-/**************no borrar hacia abajo***************/
-
 #cronicas {
   position: fixed;
   display: block;
@@ -618,7 +612,6 @@ li {
   max-width: 800px;
   margin: auto;
   margin-top: 30px;
-
 }
 
 
@@ -627,13 +620,12 @@ li {
   font-family: Droid Serif, Georgia, serif;
   font-size: 1.2rem;
   line-height: 1.8em;
-  color: #3A4145;
+  color: #3A4145; 
 }
 
 
-.acordeon {
-  background: white;
-}
+
+
 
 
 .acordeon label {
@@ -646,6 +638,7 @@ li {
   margin-bottom: 2px;
   border-radius: 10px;
   transition: all 300ms ease;
+  text-align: center;
 }
 
 .acordeon label:hover {
@@ -697,12 +690,9 @@ li {
   font-size: 1.3em;
   line-height: 1.4em;
   color: #3A4145;
-
-
-  /*  opcion*/
-
-
 }
+
+
 
 .imagen_relacionado {
   text-align: center;
