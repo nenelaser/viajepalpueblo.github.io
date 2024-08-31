@@ -270,17 +270,11 @@ small {
 }
 
 .grid-container {
-  /* elemento padre*/
   display: grid;
-  /*  contenedor display  */
   grid-template-columns: repeat(auto-fill, 250px);
-  /*repeat; repetir,  auto-fill*/
   gap: 10px;
-  /* separacion entre celdas */
   justify-content: center;
   margin: 15px;
-  /* margen*/
-
 }
 
 
