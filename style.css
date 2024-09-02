@@ -908,7 +908,6 @@ textarea {
 
 
 @media screen and (max-width: 600px) {
-
  
 
 
@@ -917,7 +916,7 @@ textarea {
     padding: 30px 10px 0px;
     }
   
-  }
+  /*  le quitamos un cierre de corchete */
 
   .cronica {
     margin: 0 40px;
@@ -945,6 +944,7 @@ textarea {
     right: 0;
     font-size: 30px;
   }
+  
 
   .banner {
     height: 400px;
