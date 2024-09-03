@@ -400,8 +400,9 @@ melcocho
 */
 
 
-/*
- redes*/
+/*redes*/
+
+
 .redes {
   display: inline-flex;
   list-style: none;
@@ -412,10 +413,9 @@ melcocho
   justify-content: center;
 }
 
+
 .redes .icon {
-  position: relative;
-  background: #fff;
-  border-radius: 50%;
+  position: relative;  
   margin: 10px;
   width: 50px;
   height: 50px;
@@ -423,82 +423,24 @@ melcocho
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  flex-direction: column; 
 }
 
-.redes .tooltip {
-  position: absolute;
-  top: 0;
-  font-size: 14px;
-  background: #fff;
-  color: #fff;
-  padding: 5px 8px;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
 
-.redes .tooltip::before {
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  background: #fff;
-  bottom: -3px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
 
-.redes .icon:hover .tooltip {
-  top: -45px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
 
-.redes .icon:hover span,
-.redes .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-  
-}
 
 span  a  i {
-  color: #0a0a0a;
- 
-}
-
-.redes .instagram:hover,
-.redes .instagram:hover .tooltip,
-.redes .instagram:hover .tooltip::before {
-  background-color: rgb(175, 173, 173);
-}
-
-.redes .youtube:hover,
-.redes .youtube:hover .tooltip,
-.redes .youtube:hover .tooltip::before {
-  background-color: rgb(175, 173, 173);
-}
-
-.redes .twitter:hover,
-.redes .twitter:hover .tooltip,
-.redes .twitter:hover .tooltip::before {
-  background-color: rgb(175, 173, 173);
-
+  color: #0a0a0a;     
 }
 
 
-.redes .google:hover,
-.redes .google:hover .tooltip,
-.redes .google:hover .tooltip::before {
-  background-color: rgb(175, 173, 173);
 
+span  a  i:hover{ 
+  color: #ff3908;
 }
+
+
 
 
 
@@ -686,6 +628,7 @@ li {
   text-align: justify;
   padding: 0 0 0 1.3em;
   margin: 0.8em 0;
+
   font-size: 1.3em;
   line-height: 1.4em;
   color: #3A4145;
@@ -826,14 +769,15 @@ textarea {
 
 /* MEDIA QUERIES */
 
+
 @media screen and (min-width: 913px) and (orientation: landscape) {
+
 
   .container-estandar {    
     padding: 60px 150px 0px;
   }
 
 }
-
 
 
 @media screen and (max-width: 912px) {
@@ -861,17 +805,12 @@ textarea {
 
 
 
-.grid-container {
-  /* elemento padre*/
-  display: grid;
-  /*  contenedor display  */
+.grid-container { 
+  display: grid; 
   grid-template-columns: repeat(auto-fill, 230px);
-  /*repeat; repetir,  auto-fill*/
-  gap: 8px;
-  /* separacion entre celdas */
+  gap: 8px; 
   justify-content: center;
-  margin: 15px;
-  /* margen*/
+  margin: 15px; 
 }
 
 
@@ -907,6 +846,7 @@ textarea {
 
 
 @media screen and (max-width: 600px) {
+
  
 
 
@@ -915,7 +855,7 @@ textarea {
     padding: 30px 10px 0px;
     }
   
-  /*  le quitamos un cierre de corchete */
+  }
 
   .cronica {
     margin: 0 40px;
@@ -943,7 +883,6 @@ textarea {
     right: 0;
     font-size: 30px;
   }
-  
 
   .banner {
     height: 400px;
