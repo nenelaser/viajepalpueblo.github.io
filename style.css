@@ -578,25 +578,7 @@ li {
   border-radius: 5%;
 }
 
-/*
 
-.sitios,
-.trayecto {
-  padding: 0 35px;
-}
-
-.sitios h3 {
-  font-size: 30px;
-}
-
-.sitios,
-.trayecto li {
-  font-family: Droid Serif, Georgia, serif;
-  font-size: 1.2rem;
-  line-height: 1.8em;
-  color: #3A4145;
-}
-*/
 
 /* informacion  de sitios de interes y costos */
 
@@ -649,6 +631,15 @@ li {
   margin-left: 25px;
 }
 
+#q3 li{
+  font-family: Droid Serif, Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.8em;
+  color: #3A4145;  
+  margin-left: 25px;
+}
+
+
 
 
 
@@ -664,17 +655,20 @@ li {
 }
 
 .articulo_relacionado h4 {
+  text-align: center;
   font-size: 1.5em;
   padding: 0 25px;
 }
 
-.articulo_relacionado p {
-  text-align: justify;
-  padding: 0 0 0 1.3em;
-  margin: 0.8em 0;
+#fiestas{
+  padding-bottom: 15px;
+}
 
-  font-size: 1.3em;
-  line-height: 1.4em;
+.articulo_relacionado p {
+  text-align: center;
+  font-family: Droid Serif, Georgia, serif;
+  font-size: 1.1rem;
+  line-height: 1.8em;
   color: #3A4145;
 }
 
@@ -682,7 +676,6 @@ li {
 
 .imagen_relacionado {
   text-align: center;
-
 }
 
 
