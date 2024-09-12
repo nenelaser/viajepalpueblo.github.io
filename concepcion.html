@@ -36,33 +36,36 @@
 
 
         <div class="container-redes">
+
             <ul class="redes">
 
-                <li class="icon instagram">                   
+                <li class="icon instagram">
                     <span><a href="https://www.instagram.com/viajepalpueblo" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-instagram"></i></a>
+                            <i class="bi bi-instagram"></i></a>
                     </span>
 
                 </li>
 
 
-                <li class="icon youtube">                   
+                <li class="icon youtube">
                     <span><a href="https://www.youtube.com/feed/you" target="_blank" rel="noopener noreferrer">
                             <i class="bi bi-youtube"></i></a>
                     </span>
                 </li>
 
-                 <li class="icon twitter">                    
+                <li class="icon twitter">
                     <span> <a href="https://x.com/viajepalpu26674" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-twitter-x"></i></a>
+                            <i class="bi bi-twitter-x"></i></a>
                     </span>
                 </li>
 
-                 <li class="icon google">                    
+
+                <li class="icon google">
                     <span> <a href="https://www.google.com/?hl=es" target="_blank" rel="noopener noreferrer">
                             <i class="bi bi-google"></i></a>
                     </span>
                 </li>
+
             </ul>
 
         </div>
@@ -108,16 +111,37 @@
 
 
 
-            <section class="sitios">
-                <h3>Sitios de interes:</h3>
-                <li>Casa de la Cultura José María Córdova</li>
-                <li>Parque Principal</li>
-                <li>Mirador Alto de la Virgen</li>
-                <li>Charco de los Payasos</li>
-                <li>Charco del aguacate</li>
-                <li>Charco de los Patos</li>
-                <br><br>
-            </section>
+
+            <div class="container-information">
+
+                <script type="text/javascript">
+                    function toggle(obj) {
+                        var obj = document.getElementById(obj);
+                        if (obj.style.display == "block") obj.style.display = "none";
+                        else obj.style.display = "block";
+                    }
+                </script>
+
+                <div class="title-information">
+                    <a href="javascript: void(0);" onClick="toggle('q1')">
+                        Sitios de interes
+                    </a>
+                </div>
+
+                <div id="q1" style="display:none;padding-top: 20px;">
+                    <li>Casa de la Cultura José María Córdova</li>
+                    <li>Parque Principal</li>
+                    <li>Mirador Alto de la Virgen</li>
+                    <li>Charco de los Payasos</li>
+                    <li>Charco del aguacate</li>
+                    <li>Charco de los Patos</li>
+                </div>
+            </div>
+
+
+            <br><br>
+
+
 
 
             <p id="p1">
@@ -158,22 +182,34 @@
             </section>
 
 
-            <section class="costo-viaje">
-                <div class="contenedor-acordeon">
-                    <div class="acordeon">
-                        <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
-                        <label for="btn-acordeon1">
-                            ¿Cuanto cuesta viajar de Medellín a Concepción?
-                        </label>
-                        <div class="contenido-acordeon">
-                            <li>Pasaje: $20.000 ida y regreso(Terminal Norte, taquilla 14 Sotrasanvicente)</li>
-                            <li>Almuerzo: 18.000</li>
-                            <li>Mekato; variado y diferente presupuesto</li>
-                        </div>
-                    </div>
+
+
+
+
+
+            <div class="container-information">
+
+                <script type="text/javascript">
+                    function toggle(obj) {
+                        var obj = document.getElementById(obj);
+                        if (obj.style.display == "block") obj.style.display = "none";
+                        else obj.style.display = "block";
+                    }
+                </script>
+
+                <div class="title-information">
+                    <a href="javascript: void(0);" onClick="toggle('q2')">
+                        ¿Cuanto cuesta viajar de Medellín a Concepción?
+                    </a>
                 </div>
 
-            </section>
+                <div id="q2" style="display:none;padding-top: 15px;">
+                    <li>Pasaje: $20.000 ida y regreso(Terminal Norte, taquilla 14 Sotrasanvicente)</li>
+                    <li>Almuerzo: 18.000</li>
+                    <li>Mekato; variado y diferente presupuesto</li>
+                </div>
+            </div>
+
 
             <br><br>
 
@@ -211,14 +247,6 @@
                 </div>
 
             </section>
-
-
-
-
-
-
-
-
 
         </div>
 
