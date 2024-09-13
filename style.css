@@ -631,16 +631,36 @@ li {
   margin-left: 25px;
 }
 
-#q3 li{
+/* Seccion "como llegar" */
+
+.journey-route{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 40px; 
+}
+
+.title-route{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+.information-journey li{
   font-family: Droid Serif, Georgia, serif;
   font-size: 1.2rem;
   line-height: 1.8em;
   color: #3A4145;  
   margin-left: 25px;
+
+}
+
+#Brutal{
+  color: rgb(71, 190, 71);
 }
 
 
-
+/*Sección sitio relacionado "Sopetran" */ 
 
 
 .seccion_relacionado {
