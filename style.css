@@ -446,6 +446,9 @@ small {
 
 
 
+
+
+
 /* 
 salto del Buey
 concepcion
@@ -455,45 +458,45 @@ melcocho
 */
 
 
-/*redes*/
-
-
-.redes {
-  display: inline-flex;
-  list-style: none;
-  height: 100%;
-  width: 100%;
-  padding-top: 140px;
+/* From Uiverse.io by McHaXYT */ 
+.button-container {
+  display: flex;
   justify-content: center;
-
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 140px;
 }
 
-
-.redes .icon {
-  background: rgb(248, 243, 243);
-  border-radius: 50%;
-  box-shadow: 0 .1rem 1rem rgba(58, 56, 56, 0.767);  
-  position: relative;  
-  margin: 10px;
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffff;
   width: 40px;
   height: 40px;
-  font-size: 18px;
+  border-radius: 50%;
+  background-color: #2d2e32;
+  border: 2px solid #2d2e32;
+  transition: all 0.45s;
+}
+
+.button:hover {
+  transform: rotate(360deg);
+  transform-origin: center center;
+  background-color: #ffff;
+  color: #2d2e32;
+}
+
+.button:hover .btn-svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg)
+    brightness(103%) contrast(103%);
+}
+
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-.icon span i {
- color: #2c3e50;
-}
-
-.icon:hover {
-  background: orangered;
-  transition: .5s;
-  box-shadow: none;
-  cursor: default;
-}
 
 
 #cronicas {
@@ -823,14 +826,10 @@ textarea {
 
 
 
-
+/*
 
 
 /* MEDIA QUERIES */
-
-
-
-
 @media screen and (min-width: 913px) and (orientation: landscape) {
 
 
@@ -839,6 +838,9 @@ textarea {
   }
 
 }
+
+
+
 
 
 @media screen and (max-width: 912px) {
