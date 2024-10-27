@@ -30,7 +30,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100px;
+  height: 100%;
   margin: auto;
   position: relative;
   background-color: #2c3e50;
@@ -44,6 +44,8 @@
     margin: 0;
     padding: 0;
   }
+
+
 
   a {
     display: flex;
@@ -142,13 +144,14 @@ li.slider {
 .content {
   text-align: center;
   position: relative;
-  width: 100%;  
+  width: 100%;
 }
 
 
 .inner {
   min-height: 600px;
-  /*position: relative; */ /* retirado para centrar frases*/
+  /*position: relative; */
+  /* retirado para centrar frases*/
 }
 
 
@@ -162,7 +165,7 @@ li.slider {
 #frase {
   margin-left: 75px;
   text-align: center;
- 
+
 }
 
 
@@ -180,13 +183,12 @@ li.slider {
 
 
 #frase h1 {
-  color:red;
+  color: red;
   font-family: "Charm", cursive;
   font-weight: 700;
   font-style: normal;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: white;
-  
 }
 
 
@@ -204,15 +206,17 @@ li.slider {
 }
 
 
-
 h1 {
   margin: 0px;
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   font-size: 5em;
   padding: 0px 20px;
-  line-height: 1; 
+  line-height: 1.2em;
+
 }
+
+
 
 
 p {
@@ -263,40 +267,45 @@ small {
  * ----------------------------------------
  */
 
- #frase {
-	-webkit-animation: tracking-in-expand-fwd 0.8s ;
-	        animation: tracking-in-expand-fwd 0.8s ;
+#frase {
+  -webkit-animation: tracking-in-expand-fwd 0.8s;
+  animation: tracking-in-expand-fwd 0.8s;
 }
 
- @-webkit-keyframes tracking-in-expand-fwd {
+@-webkit-keyframes tracking-in-expand-fwd {
   0% {
     letter-spacing: -0.5em;
     -webkit-transform: translateZ(-700px);
-            transform: translateZ(-700px);
+    transform: translateZ(-700px);
     opacity: 0;
   }
+
   40% {
     opacity: 0.6;
   }
+
   100% {
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
     opacity: 1;
   }
 }
+
 @keyframes tracking-in-expand-fwd {
   0% {
     letter-spacing: -0.5em;
     -webkit-transform: translateZ(-700px);
-            transform: translateZ(-700px);
+    transform: translateZ(-700px);
     opacity: 0;
   }
+
   40% {
     opacity: 0.6;
   }
+
   100% {
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
     opacity: 1;
   }
 }
@@ -309,23 +318,23 @@ small {
 
 
 
-/* fotos */
+/******FOTOS******/
 
 
 .photos {
   width: 100%;
-  height: auto; 
+  height: auto;
   background: white;
 }
 
 
 
-.grid-container { 
-  display: grid;  
-  grid-template-columns: repeat(auto-fill, 250px); 
-  gap: 10px;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  gap: 0.5em;
   justify-content: center;
-  margin: 15px;
+  margin: 10px;
 }
 
 
@@ -349,12 +358,12 @@ small {
 }
 
 
+
+
 /*cronicas*/
 
 
-
 .container {
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -362,10 +371,11 @@ small {
   max-width: 1200px;
   margin-block: 2rem;
   gap: 3rem;
-  /* estaba en 2rem*/
 
 
 }
+
+
 
 .card {
   display: flex;
@@ -376,9 +386,6 @@ small {
   border-radius: 1em;
   background: #ECE9E6;
   justify-content: center;
-  /*  este no estaba*/
-
-
 
 }
 
@@ -398,20 +405,19 @@ small {
   display: flex;
   flex-direction: column;
   gap: .5rem;
+  align-items: center;
 }
 
-#title-chronicle {
-  text-decoration: none;
-  color: red;
 
-}
 
 .tag {
-  align-self: flex-start;
-  padding: .25em .75em;
-  border-radius: 1em;
-  font-size: .75rem;
+  border-radius: 5px;
+  width: auto;
+  padding: 0 15px;
+
 }
+
+
 
 .tag+.tag {
   margin-left: .5em;
@@ -422,6 +428,7 @@ small {
 .tag-red {
   background: linear-gradient(to bottom, #ef473a, #cb2d3e);
   color: #fafafa;
+  font-style: italic;
 
 
 }
@@ -431,16 +438,23 @@ small {
   text-align: center;
 }
 
-#title-chronicle{
+#title-chronicle {
   font-size: 1.5rem;
   text-transform: capitalize;
   text-align: center;
+  color: salmon;
+  opacity: 0.8;
 
 }
 
+/* pendiente x cambiar*/
 #title-chronicle:hover {
-  color: darkorange;
+  opacity: none;
+  color: #eb1d02;
+  text-decoration: none;
   transition: .5s;
+
+
 
 }
 
@@ -450,45 +464,93 @@ small {
 
 
 /* 
-salto del Buey
-concepcion
-Taparto
-sopetran
-melcocho
+SALTO DEL BUEY
+CONCEPCION
+TAPARTO
+SOPETRAN
+MELCOCHO
 */
 
+/******HEADER*********/
+#container-navegacion{
+  position: fixed;
+  display: block;
+}
 
-/* From Uiverse.io by McHaXYT */ 
+/********************/
+
+.cronica-encabezado {
+  justify-content: center;
+  padding: 140px 5px 0px 5px;
+  margin: 0 60px; 
+}
+
+#fecha {
+  font-size: 20px;
+  padding-left: 100px ;
+}
+
+
+
+#titulocronica {
+  color: orangered;
+  text-align: center;
+  padding: 30px 0px;
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 4.5rem;
+  padding-bottom: 15px;
+}
+
+#frase1{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;  
+  font-size: 1.3em;
+}
+
+
+/***BOTONES DE NAVEGACION*******/
+
+.btn-svg {
+  width: 16px;
+}
 .button-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  padding-top: 140px;
+  padding: 20px 0px 20px;
+
+
 }
 
 .button {
   cursor: pointer;
   text-decoration: none;
   color: #ffff;
-  width: 40px;
-  height: 40px;
+  width: 33px;
+  height: 33px;
   border-radius: 50%;
   background-color: #2d2e32;
   border: 2px solid #2d2e32;
   transition: all 0.45s;
+
 }
 
 .button:hover {
   transform: rotate(360deg);
-  transform-origin: center center;
+  transform-origin: center;
   background-color: #ffff;
   color: #2d2e32;
+
 }
 
 .button:hover .btn-svg {
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg)
-    brightness(103%) contrast(103%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);
 }
 
 .flex-center {
@@ -496,19 +558,29 @@ melcocho
   justify-content: center;
   align-items: center;
 }
+/*******************************/
 
+/******** FOTO PRINCIPAL **************/
 
+.photo-ppal {
+  display: flex; 
+  justify-content: center;
+}
 
-#cronicas {
-  position: fixed;
-  display: block;
+#imagen-ppal {
+  width: 1100px;
+  height:700px;
+  border-radius: 1.5% ;
 }
 
 
-.container-estandar { 
+/***************************************/
+
+
+.container-estandar {
   display: flex;
   width: 100%;
-  padding: 60px 100px 0px;
+  padding: 30px 70px 0px;
 }
 
 
@@ -516,38 +588,16 @@ melcocho
   justify-content: center;
   padding: 15px 5px;
   border-top: solid 2px orangered;
-  margin: 0 80px;
+  margin: 0 150px;
+
 }
-
-
-#fecha {
-  font-size: 20px;
-  padding: 0 25px;
-}
-
-
-
-
-
-#titulocronica {
-  color: orangered;
-  text-align: center;
-  padding: 50px 0px;
-  margin-top: 0;
-  font-family: Droid Serif, Georgia, serif;
-  font-weight: 400;
-  font-size: 3.8rem;
-}
-
 
 
 #p1 {
-  text-align: justify;
-  font-family: Droid Serif, Georgia, serif;
-  font-size: 1.4rem;
-  line-height: 1.8em;
+  text-align: justify; 
+  font-size: 1.2rem;
+  line-height: 1.8em;  
   color: #3A4145;
-
 }
 
 
@@ -559,20 +609,13 @@ h3 {
   padding: 10px;
   font-size: 30px;
   color: orangered;
-
 }
-
-li {
-  font-size: 18px;
-}
-
 
 
 
 .container_video {
   display: flex;
   justify-content: center;
-
 }
 
 
@@ -587,21 +630,25 @@ li {
 
 /* informacion  de sitios de interes y costos */
 
-.container-information{
+.container-information {
   width: 100%;
   max-width: 800px;
   margin: auto;
   margin-top: 30px;
+
 }
 
 
 
-.title-information a{
+
+
+
+.title-information a {
   display: block;
-  padding: 20px;
+  padding: 20px 80px;
   font-size: 23px;
-  background: rgb(163, 156, 156);
-  color: black;
+  background: #2e2e2e;
+  color: darkorange;
   cursor: pointer;
   margin-bottom: 2px;
   border-radius: 10px;
@@ -612,66 +659,68 @@ li {
 }
 
 
-.title-information a:hover{ 
-  background: #2e2e2e;
-  color: darkorange;
+.title-information a:hover {
+  background: rgb(163, 156, 156);
+  color: black;
   transition: .5s;
 }
 
 
-#q1 li{
+#q1 li {
   font-family: Droid Serif, Georgia, serif;
   font-size: 1.2rem;
   line-height: 1.8em;
-  color: #3A4145;  
+  color: #3A4145;
   margin-left: 25px;
 }
 
 
-#q2 li{
+#q2 li {
   font-family: Droid Serif, Georgia, serif;
   font-size: 1.2rem;
   line-height: 1.8em;
-  color: #3A4145;  
+  color: #3A4145;
   margin-left: 25px;
 }
 
-/* Seccion "como llegar" */
+/* Seccion "como viajamos" */
 
-.journey-route{
+.journey-route {
   width: 100%;
   max-width: 800px;
   margin: auto;
-  margin-top: 40px; 
+  margin-top: 40px;
+  box-shadow: 0 .1rem 1rem rgba(12, 10, 10, 0.1);
+  background-color: #ecedf1;
 }
 
-.title-route{
+.title-route {
   text-align: center;
   padding-bottom: 10px;
 }
 
 
-.information-journey li{
+.information-journey li {
   font-family: Droid Serif, Georgia, serif;
   font-size: 1.2rem;
-  line-height: 1.8em;
-  color: #3A4145;  
+  line-height: 2.4em;
   margin-left: 25px;
-
+  color: green;
 }
 
-#Brutal{
+
+#Brutal {
   color: rgb(71, 190, 71);
 }
 
 
-/*Sección sitio relacionado "Sopetran" */ 
+/*Sección sitio relacionado "Sopetran" */
 
 
 .seccion_relacionado {
   border-top: solid 2px orangered;
   padding: 40px 10px;
-  margin: 0 30px;
+  margin: 0 20px;
 
 }
 
@@ -685,7 +734,7 @@ li {
   padding: 0 25px;
 }
 
-#fiestas{
+#fiestas {
   padding-bottom: 15px;
 }
 
@@ -719,7 +768,7 @@ li {
   display: grid;
   grid-template-columns: 400px;
   justify-content: center;
-  padding-top: 120px;
+  padding-top: 20px;
 
 
 }
@@ -730,33 +779,35 @@ li {
   margin-top: 30px;
   padding-left: 20px;
   background: black;
-
+  display: grid;
 
 }
+
 
 
 
 #d1 h3 {
-  padding-bottom: 35px;
-
+  text-align: center;
+  padding-top: 25px;
 }
+
 
 #d1 h4 {
-  padding-bottom: 15px;
+  padding: 15px 5px 0px 5px;
   color: white;
   font-size: 14px;
+  color: #16a085;
 
 }
 
 
-#d1,
+
 #d2,
 #d3,
 #d4,
 #d5,
-#d6,
-#d7 {
-  padding-top: 25px;
+#d6 {
+  padding: 15px;
   color: orangered;
 }
 
@@ -779,7 +830,7 @@ li {
 
 #d7 {
   text-align: center;
- 
+  color: orangered;
 }
 
 textarea {
@@ -792,11 +843,11 @@ textarea {
   border-color: #646364;
   margin-top: 10px;
   padding-left: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding-top: 15px;
 }
 
-.formulario  #d6{ 
+.formulario #d6 {
   text-align: center;
 }
 
@@ -804,14 +855,12 @@ textarea {
   width: 150px;
   height: 40px;
   border-radius: 5px;
-  border:solid 2px white ;
-  margin-bottom: 20px;
+  border: solid 2px white;
+  margin-bottom: 3px;
   color: orangered;
   font-style: normal;
-  font-size: 1.8em;
+  font-size: 1.7em;
   background-color: black;
-
-
 }
 
 
@@ -819,6 +868,8 @@ textarea {
 #enviar:hover {
   color: aqua;
   transition: .5s;
+  border: solid 2px aqua;
+  cursor: pointer;
 }
 
 
@@ -826,15 +877,20 @@ textarea {
 
 
 
-/*
 
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 913px) and (orientation: landscape) {
 
 
-  .container-estandar {    
-    padding: 60px 150px 0px;
+
+
+@media screen and (max-width: 1366px) {
+
+
+  .container {
+    margin: 0 auto;
+    margin-top: 35px;
+    /* estas dos ultimas etiquetas  la agregeye para centrar el div en  la pantalla grande*/
   }
 
 }
@@ -842,96 +898,185 @@ textarea {
 
 
 
+/* pantalla 2 "derecha pequeña" */
+@media only screen and (min-width:768px) and (max-width: 1024px) and (orientation: landscape) {
 
-@media screen and (max-width: 912px) {
+  /********************GALERIA FOTOS**************************/
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 210px);
+    gap: 8px;
+    justify-content: center;
+    margin: 15px;
+  }
+
+  .grid-item {
+    width: 200px;
+    height: 220px;
+  }
+
+/******************************************************************/
+ 
+/* 
+SALTO DEL BUEY
+CONCEPCION
+TAPARTO
+SOPETRAN
+MELCOCHO
+*/
+
+/*****************************CRONICAS*******************************/
+ 
+/**********FECHA****************/
+ 
+#fecha {
+  font-size: 19px;
+  padding-left: 40px;
+}
+/***********************************************************************/
+#titulocronica {
+  font-size: 3.5rem;
+}
+
+#frase1{
+  font-size: 1.1em;
+}
 
 
-  .container-estandar {    
-    padding: 60px 40px 0px;
+
+
+/***BOTONES DE NAVEGACION*******/
+  .btn-svg {
+    width: 14px;
+  }
+
+
+  .button {
+    width: 28px;
+    height: 28px;
+  }
+
+  /*******************************************************************************************/
+  /**********FOTO PRINCIPAL****************/  
+   #imagen-ppal {  
+    width: 800px;
+    height:700px; 
+    padding: 0% 20px; 
+    border-radius:4% ;
+  }
+ 
+  /***********************************************************************/
+ 
+  .container-estandar { 
+    padding: 25px 80px 0px;
+  }
+  
+ 
+
+  .cronica {
+    padding: 15px 10px;
+    margin: 0 10px;
+  }
+
+
+  #p1 {
+    font-size: 1.1em; 
+    line-height: 1.7em;     
+  }
+
+  h3 {
+    padding: 9px;
+    font-size: 25px;  
+  }
+
+  
+  /****SECCION COMO VIAJAMOS****" */
+
+  .information-journey li {
+    font-size: 1.0rem;
+    line-height: 2.3em; 
+
   }
 
 
 
 
-  #check:checked~nav {
-    right: 0;
 
+  /**************************************************************************************************/
+
+/****************************CRONICA*******************************************/
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(15rem, calc(15rem + 4vw), 22rem);
+    overflow: hidden;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #ECE9E6;
+    justify-content: center;
   }
 
-  .banner {
-    height: 1020px;
-  }
 
 
-}
+  /*-----------------------------------------------------------------------------*/
 
 
 
 
-.grid-container { 
-  display: grid; 
-  grid-template-columns: repeat(auto-fill, 230px);
-  gap: 8px; 
-  justify-content: center;
-  margin: 15px; 
-}
-
-
-
-
-
-.card {
-  display: flex;
-  flex-direction: column;
-  width: clamp(15rem, calc(15rem + 4vw), 22rem);
-  overflow: hidden;
-  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
-  border-radius: 1em;
-  background: #ECE9E6;
-  justify-content: center;
-
-}
-
-
-
-
-
-
-#p1 {
-  font-size: 1.3rem;
-  line-height: 1.7em;
-}
-
-
-
-
-
-
-
-@media screen and (max-width: 600px) {
 
  
-  .inner{
+
+
+
+
+
+
+
+
+
+}
+  
+
+
+/*@media screen and (max-width: 600px) {*/
+
+
+@media screen and (max-width: 767px) {
+
+  .inner {
     position: relative;
   }
 
 
-  .container-estandar {
-    display: block; 
-    padding: 30px 10px 0px;
-    }
-  
+  .btn-svg {
+    width: 16px;
   }
 
-  .cronica {
-    margin: 0 40px;
+
+  .button {
+    width: 25px;
+    height: 25px;
+  }
+
+
+  .container-estandar {
+    display: block;
+    padding: 30px 10px 0px;
+  }
+
+
+
+  .cronica {  
+    margin: 0 10px;
     padding: 10px 5px;
   }
 
-  
-#titulocronica {
-  font-size: 3.0rem;
-}
+
+  #titulocronica {
+    font-size: 3.0rem;
+  }
 
 
 
@@ -975,18 +1120,32 @@ textarea {
 
 
 
-
-
+}
 
 
 
 
 @media screen and (max-width: 450px) {
 
+  /**********LOGOS REDES SOCIALES *********/
+
+  .btn-svg {
+    width: 12px;
+  }
 
 
-  .container-estandar {    
-    padding: 20px 10px 0px;
+  .button {
+    width: 25px;
+    height: 25px;
+  }
+
+
+/****************************************************/
+
+/************CRONICAS*******************************/
+  .container-estandar {
+    padding: 30px 5px 10px;
+ 
   }
 
 
@@ -994,6 +1153,13 @@ textarea {
     margin: 0 10px;
   }
 
+
+
+  #fecha {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+  
 
 
   .menu li a {
