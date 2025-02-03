@@ -14,7 +14,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo+Black&family=Passion+One:wght@400;700;900&family=Russo+One&family=Staatliches&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -29,80 +29,93 @@
         <li><a href="contacto.html">Contacto</a></li>
         <li class="slider"></li>
       </nav>
-      
+
     </div>
   </header>
 
 
-  <div class="container">
-    
-    <div class="card">
-      <div class="card__header">
-        <img id="img-chronicle" src="img/melcocho.jpeg" alt="card__image" class="card__image" width="600">
-      </div>
-      <div class="card__body">
-        <span class="tag tag-red"> <time datetime="2024-07-20">20 Julio 2024</time></span>
-        <h4><a id="title-chronicle" href="melcocho.html">Río Melcocho</a></h4>
-        <p> <em> <strong> «Viajar es cambiarle la ropa al alma <br> [anonimo] »</strong> <br> </em></p>
-      </div>
-    </div>
 
-
-    <div class="card">
-      <div class="card__header">
-        <img id="img-chronicle" src="img/sopetran3.jpg" alt="card__image" class="card__image" width="600">
+  <div class="card-container">
+    <!-- Tarjeta 1 -->
+    <div class="card" onclick="flipCard(this)">
+      <div class="front">
+        <div class="card__body">
+          <span class="tag tag-red"> <time datetime="2024-07-20">20 Julio 2024</time></span>
+          <h4 id="title-chronicle"><a href="melcocho.html">Río Melcocho</a></h4>
+          <p> <em> <strong> «Viajar es cambiarle la ropa al alma <br> [anonimo] »</strong> <br> </em></p> <br>
+        </div>
       </div>
-      <div class="card__body">
-        <span class="tag tag-red"> <time datetime="2024-08-06">08 Junio 2024</time></span>
-        <h4><a id="title-chronicle" href="sopretran.html">Sopetrán</a></h4>
-        <p> <em> <strong> «Solo los que vagan encuentran nuevos caminos [refrán noruego]»</strong> <br> </em></p>
+      <div class="back">
+        <img src="img/melcocho.jpeg" alt="Imagen 1">
       </div>
     </div>
 
-
-
-    <div class="card">
-      <div class="card__header">
-        <img id="img-chronicle" src="img/concepcion1.jpeg" alt="card__image" class="card__image" width="600">
+    <!-- Tarjeta 2 -->
+    <div class="card" onclick="flipCard(this)">
+      <div class="front">
+        <div class="card__body">
+          <span class="tag tag-red"><time datetime="2024-08-06">08 Junio 2024</time></span>
+          <h4 id="title-chronicle"><a href="sopretran.html">Sopetrán</a></h4>
+          <p> <em> <strong> «Solo los que vagan encuentran nuevos caminos [refrán noruego]»</strong>
+            </em> </p>
+        </div>
       </div>
-      <div class="card__body">
-        <span class="tag tag-red"> <time datetime="2024-25-05">25 Mayo 2024</time></span>
-        <h4><a id="title-chronicle" href="concepcion.html">Concepción</a></h4>
-        <p><em> <strong> «La vida, o es una aventura o no es nada  [Hellen Keller]».</strong></em> <br> </p>
+      <div class="back">
+        <img src="img/sopetran3.jpg" alt="Imagen 2">
       </div>
     </div>
 
-
-
-
-
-    <div class="card">
-      <div class="card__header">
-        <img id="img-chronicle" src="img/taparto3.jpg" alt="card__image" class="card__image" width="600">
+    <!-- Tarjeta 3 -->
+    <div class="card" onclick="flipCard(this)">
+      <div class="front">
+        <div class="card__body">
+          <span class="tag tag-red"><time datetime="2024-25-05">25 Mayo 2024</time></span>
+          <h4 id="title-chronicle"><a href="concepcion.html">Concepción</a></h4>
+          <p><em> <strong> «La vida, o es una aventura o no es nada [Hellen Keller]».</strong></em> <br> <br> <br> </p>
+        </div>
       </div>
-      <div class="card__body">
-        <span class="tag tag-red"> <time datetime="2024-03-17">17 Marzo 2024</time></span>
-        <h4><a id="title-chronicle" href="Taparto.html">Charcos de Tapartó</a></h4>
-        <p> <em> <strong> «Muere lentamente ... Quien no viaja, ni
-              leé, quien no sueña [Neruda]».</strong> <br> <br> </em></p>
+      <div class="back">
+        <img src="img/concepcion1.jpeg" alt="Imagen 3">
       </div>
     </div>
 
 
 
-
-    <div class="card">
-      <div class="card__header">
-        <img id="img-chronicle" src="img/salto del buey6.jpg" alt="card__image" class="card__image" width="600">
+    <!-- Tarjeta 4 -->
+    <div class="card" onclick="flipCard(this)">
+      <div class="front">
+        <div class="card__body">
+          <span class="tag tag-red"> <time datetime="2024-03-17">17 Marzo 2024</time></span>
+          <h4  id="title-chronicle"><a href="Taparto.html">Tapartó</a></h4>
+          <p> <em> <strong> «Muere lentamente ... Quien no viaja, ni
+                leé, quien no sueña [Neruda]».</strong> <br>  </em></p>
+        </div>
       </div>
-      <div class="card__body">
-        <span class="tag tag-red"> <time datetime="2023-02-26">26 Febrero 2023</time></span>
-        <h4><a id="title-chronicle" href="SaltodelBuey.html"> Salto del Buey</a></h4>
-        <p><em> <strong> «No hay viaje que <br> no te cambie algo <br> [anónimo]»</strong> <br> <br> </em></p>
+      <div class="back">
+        <img src="img/taparto3.jpg" alt="Imagen 2">
       </div>
     </div>
+
+
+    <!-- Tarjeta 5 -->
+    <div class="card" onclick="flipCard(this)">
+      <div class="front">
+        <div class="card__body">
+          <span class="tag tag-red"> <time datetime="2023-02-26">26 Febrero 2023</time></span>
+          <h4 id="title-chronicle"><a href="SaltodelBuey.html"> Salto del Buey</a></h4>
+          <p><em> <strong> «No hay viaje que <br> no te cambie algo <br> [anónimo]»</strong> <br> <br> </em>
+          </p>
+        </div>
+      </div>
+      <div class="back">
+        <img src="img/salto del buey6.jpg" alt="Imagen 2">
+      </div>
+    </div>
+
   </div>
 
 
+  <script src="script.js"></script>
 </body>
-</html>
+
+</html
